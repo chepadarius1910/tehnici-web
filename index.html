@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Totul despre fotbal</title>
+</head>
+
+<body>
+  <header>
+    <h1>Totul despre fotbal 
+        CHAMPIONS LEAGUE
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Acasă</a></li>
+        <li><a href="echipe.html" class="nav-link">Echipe</a></li>
+        <li><a href="jucatori.html" class="nav-link">Jucători</a></li>
+        <li><a href="meciuri.html" class="nav-link">Meciuri</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+    <div id="user-greeting"></div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Bun venit la ora exacta in fotbal!</h2>
+      <p>Aici vei găsi cele mai recente știri și informații despre echipele, jucătorii și meciurile din lumea fotbalului.</p>
+    </section>
+
+    <section>
+      <h2>Echipe</h2>
+      <ul class="team-list">
+        <li>Real Madrid 🏆</li>
+        <li>FC Barcelona 🏆</li>
+        <li>Manchester United 🏆</li>
+        <li>Bayern Munich 🏆</li>
+        <li>Manchester City 🏆</li>
+        <li>Paris Saint Germain 🏆</li>
+        <li>Borussia Dortmund 🏆</li>
+        <li>Chelsea 🏆</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Introduceți numele dvs.</h2>
+      <form id="name-form">
+        <input type="text" id="name-input" placeholder="Numele dvs.">
+        <button type="submit">Trimite</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Tombola Champions League</h2>
+      <button id="tombola-button">Extragere echipă câștigătoare</button>
+      <div id="castigator-container"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Website despre fotbal. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  
+  <script>
+    // Obține elementele HTML
+    const tombolaButton = document.getElementById("tombola-button");
+    const castigatorContainer = document.getElementById("castigator-container");
+
+    // Atașează un eveniment de click pe butonul de tombolă
+    tombolaButton.addEventListener("click", function() {
+      // Extrage și afișează echipa câștigătoare
+      const echipaCastigatoare = extrageEchipaCastigatoare();
+      castigatorContainer.textContent = "Echipa câștigătoare a Champions League este: " + echipaCastigatoare;
+    });
+  </script>
+</body>
+
+</html>

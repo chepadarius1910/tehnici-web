@@ -1,0 +1,188 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("https://lh3.googleusercontent.com/EpdpO2fg5IS2HSoi-Vcytku9EheVKxxC76ZvzANs92VTXn8o47NY-KzE5cpahOIw4fzLH4j89W66V1McCu9D4EcTo9Q940CWJtyzANCw");
+  background-size: cover;
+}
+
+body {
+  padding: 1% 2%;
+  height: 100%;
+  font-size: 1.5rem;
+  line-height: 1.6em;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  justify-items: center;
+  align-items: center;
+  border-bottom: #dfe2e2 4px solid;
+}
+
+.logo {
+  color: #f1faee;
+}
+
+.black-logo {
+  color: rgb(255, 168, 168);
+}
+
+.nav-bar {
+  justify-self: end;
+}
+
+.navigator {
+  color: #3d0f0f;
+  align-items: right;
+}
+
+.main-section {
+  color: #0f0f3d;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-areas: ". main-div .";
+}
+
+.nav-button {
+  background-color: #f1faee;
+  width: 120px;
+  border: 2px solid #ff7a59;
+  color: black;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  cursor: pointer;
+  transform-style: preserve-3d;
+}
+
+.nav-button:hover {
+  background-color: #f1faee;
+  width: 150px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 12px;
+  border: 3px dotted #ff7a59;
+  color: #ff7a59;
+}
+
+.nav-button:before {
+  position: absolute;
+  top: 11px;
+  left: -30px;
+  transition: all 300ms ease;
+}
+
+.nav-button {
+  opacity: 0.5;
+}
+
+.nav-button:hover {
+  opacity: 1;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+
+  40% {
+      -webkit-transform: translateY(-20px);
+      transform: translateY(-20px);
+  }
+
+  80% {
+      -webkit-transform: translateY(-10px);
+      transform: translateY(-10px);
+  }
+}
+
+.nav-button:hover {
+  animation: bounce 1s;
+}
+
+.main-div-sign {
+  grid-area: main-div;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(241, 250, 238, 0.6);
+  display: gird;
+  grid-template-rows: 1fr;
+  border-radius: 12px;
+}
+
+.main-div {
+  grid-area: main-div;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: rgb(241, 250, 238, 0.6);
+  display: grid;
+  grid-template-rows: 1fr;
+  border-radius: 12px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #0f0f3d;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #3d0f0f;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.content {
+  font-size: 1.2rem;
+  color: #3d0f0f;
+  margin: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f1faee;
+  color: #fdfdfd;
+  font-size: 1rem;
+}
+
+.footer a {
+  color: #ff7a59;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table td, table th {
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+}
+
